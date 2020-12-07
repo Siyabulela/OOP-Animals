@@ -4,6 +4,7 @@ class Animal {
     }
     eat() {
         console.log(this.name + " eats")
+        return (`Food`)
     }
     sounds() {
         console.log("Sound...")
@@ -13,12 +14,14 @@ class Animal {
 class Dog extends Animal {
     sounds() {
         console.log("Dog barks")
+        return `Bark`
     }
 }
 
 class Cat extends Animal {
     sounds() {
         console.log("Cat meows")
+        return `Meow`
     }
 }
 
@@ -73,3 +76,5 @@ home.makeAllSounds();
 console.log("...............");
 
 home.adoptPet(dog1);
+
+module.exports = {Animal, Dog, Cat};
