@@ -58,7 +58,6 @@ class Home {
 var home = new Home();
 var dog1 = new Dog();
 var dog2 = new Dog();
-var cat = new Cat();
 
 home.makeAllSounds();
 console.log("...............");
@@ -77,4 +76,4 @@ console.log("...............");
 
 home.adoptPet(dog1);
 
-module.exports = {Animal, Dog, Cat};
+module.exports = {dog, cat};
